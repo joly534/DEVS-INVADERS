@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Introduction</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Iceland&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <nav>
+        <a href="regles.html" class="bouton">REGLES DU JEU</a>
+        <a href="niv1.html" class="bouton">JOUER</a>
+    </nav>
+
+    <!------------------------------------generique du jeu------------------------------------------>
+
+    <div id="war" class="war_off">
+        <p>...Dans un avenir pas si lointain<br/>sur la planette Dklik-220518...</p>
+    </div>
+        
+    <div id="deroule" class= "deroule_off">
+        <div id="generique" class="generique_off">
+            <h1>DEVS INVADERS</h1>
+            <br/><br/>
+            <p>Un combat sans merci oppose les forces rebelles WEB-DEVS et le terrible DARK VA[LI]D[AT]OR</p>
+            <p>Menant le combat sur tous les "Front", la résistance envoie ses meilleurs soldats aux confins du Net pour trouver une arme qui lui permettrait de mettre fin à cette bataille partie de "Zéro" : L'ALTER-NATION.</p>
+            <p>En route!!! Vous êtes une poignée d'élus à partir à la recherche de cette fameuse arme... Mais prenez garde! Les obstacles seront nombreux et ne succombez surtout pas au côté obscur du DEV.</p>
+            <p>Sachez que la résistance protègera vos arrières et ne tolèrera aucune déviance.</p>
+            <p>Soldats... Notre avenir est entre vos mains. Que le Workplace soit avec vous!!!</p>
+        </div>
+    </div>
+<!------------------------------------première strate------------------------------------------->
+	<canvas id="aire_de_jeu" class="jeu_off"></canvas>
+
+    <audio id="audioPlayer1">
+		<source src="musique/intro.mp3">
+		<source src="musique/intro.ogg">
+		<source src="musique/intro.wav">
+    </audio>
+    
+    <script src="../js/intro.js"></script>
+    
+</body>
+</html>

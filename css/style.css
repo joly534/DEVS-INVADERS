@@ -1,0 +1,194 @@
+/***********************************************/
+/********************GENERAL********************/
+/***********************************************/
+
+*{
+    top: 0;
+    left: 0;
+    box-sizing: content-box;
+}
+ h1, p, .bouton{
+	font-family: 'Iceland', cursive;
+}
+
+body{
+	background-color:black;
+	width: 98%;
+    overflow:hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+h1{
+	color: #ffd700;
+	font-size: 5em;
+    text-align: center;
+    margin-top: 2em;
+}
+
+.bouton{
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 0.5em 1em;
+    background: #ffd700;
+    color: black;
+    border-radius: 10px;
+    margin: 3em 1em;
+}
+
+.bouton:hover{
+    animation: animbouton 0.15s ease-out infinite;
+}
+
+
+.btn_start_off, .war_off, .titre_off, .deroule_off, .generique_off, .titre_off, .btn_niveau_un_off, .jeu_off, .vaisseau_off, .mechant_off{
+	display: none;
+}
+
+.war_on{
+    font-size: 2em;
+    color: white;
+    margin-top:200px;
+    text-align: center;
+    opacity: 0;
+    animation-delay: 0.5s;
+    animation-duration: 5s;
+    animation-name: wars;
+    animation-timing-function: ease-out;
+}
+
+.deroule_on {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    width: 800px;
+    margin: 0 0 0 -400px;
+    top: auto;
+    bottom: 0;
+    height: 50em;
+    color: #afafaf;    
+    font-size: 3em;
+    text-align: justify;
+    transform-origin: center bottom;
+    transform: perspective(300px) rotateX(25deg);
+}
+
+.generique_on {
+    position: absolute;
+    top: 100%; 
+    animation-delay: 2.5s;
+    animation-duration: 60s;
+    animation-name: deroule;
+    animation-timing-function: linear;
+}
+
+.jeu_on{
+position: absolute;
+
+    cursor: none;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+}
+
+/**************************************************/
+/********************ANIMATIONS********************/
+/**************************************************/
+
+/********************************************************/
+/********************ANIMATION BOUTON********************/
+/********************************************************/
+@keyframes animbouton{
+    0%{
+        color: white;
+    } 50%{
+        color: #ffd700;
+    } 100%{
+        color: black;
+    }}
+
+@-webkit-keyframes animbouton{
+    0%{
+        color: white;
+    } 50%{
+        color: #ffd700;
+    } 100%{
+        color: black;
+    }}
+
+@-moz-keyframes animbouton{
+    0%{
+        color: white;
+    } 50%{
+        color: #ffd700;
+    } 100%{
+        color: black;
+    }}
+
+/*****************************************************/
+/********************PREMIER TEXTE********************/
+/*****************************************************/
+@keyframes wars {   
+    0%, 100% {
+        opacity: 0;
+    }
+    40%, 98% {
+        opacity: 1;
+    }}
+@-webkit-keyframes wars {
+    0%, 100% {
+        opacity: 0;
+    }
+    40%, 98% {
+        opacity: 1;
+    }}
+@-moz-keyframes wars {
+    0%, 100% {
+        opacity: 0;
+    }
+    40%, 98% {
+        opacity: 1;
+    }}
+
+/********************************************************************/
+/********************ANIMATION STARWARS GENERIQUE********************/
+/********************************************************************/
+@keyframes deroule {             
+    0% {
+        top: 100%;
+        opacity: 1;
+    }
+    90% {
+        top: 0;
+        opacity: 1; 
+    }
+    100% {
+        top:-10%;
+        opacity: 0;
+    }}
+@-webkit-keyframes deroule {
+    0% {
+        top: 100%;
+        opacity: 1;
+    } 90% {
+        top: 0;
+        opacity: 1; 
+    } 100% {
+        top:-10%;
+        opacity: 0;
+    }}
+@-moz-keyframes deroule {
+    0% {
+        top: 100%;
+        opacity: 1;
+    } 90% {
+        top: 0;
+        opacity: 1; 
+    } 100% {
+        top:-10%;
+        opacity: 0;
+    }}
+
