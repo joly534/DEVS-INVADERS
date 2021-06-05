@@ -1,8 +1,6 @@
 /********************************************intro du jeu *******************************************/
 
 function introduction(){
-	var start= document.getElementById('start');
-	start.className= "btn_start_off";
 	var war= document.getElementById('war');
 	war.className= "war_on";
 	var deroule= document.getElementById('deroule');

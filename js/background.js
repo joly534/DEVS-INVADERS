@@ -18,7 +18,7 @@ function Goutte() {
     this.y= Math.random()* (canvas.height - 1);
     this.width= 1.5;
     this.height= 5;
-    this.color= ffd700;
+    this.color= "#ffd700";
     this.dy= Math.random() * (5-2) + 2;
 /**************fonction pour dessinner la goutte**********************/
     this.draw= function() {
