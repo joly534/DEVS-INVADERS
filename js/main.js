@@ -25,12 +25,6 @@ function startFirst(){
 	var player = document.querySelector('#audioPlayer2');
 	player.play();
 
-
-
-
-
-
-
 	/********************controle souris**********************/
 	canvas.addEventListener("mousemove", controlSouris);
 		function controlSouris(e) 
