@@ -1,13 +1,13 @@
 /*************************************canvas*********************************************/
 
-var canvas= document.getElementById('aire_de_jeu');
-var ctx= canvas.getContext('2d');
+let canvas= document.getElementById('aire_de_jeu');
+let ctx= canvas.getContext('2d');
 
 canvas.width= window.innerWidth-10;
 canvas.height= window.innerHeight-10;
 /*************tableau contenant toutes les gouttes*******************/
-var goutte = [];
-for (var i = 0; i < 300; i++) {
+let goutte = [];
+for (let i = 0; i < 300; i++) {
     goutte[i] = new Goutte();
 };
 
@@ -38,7 +38,7 @@ function Goutte() {
 
 function draw(){
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    for (var i = 0; i < 600; i++) 
+    for (let i = 0; i < 600; i++) 
     {
         goutte[i].draw();
         goutte[i].tombe();
@@ -46,4 +46,5 @@ function draw(){
     window.requestAnimationFrame(draw); 
 
 }
+
 window.requestAnimationFrame(draw);
