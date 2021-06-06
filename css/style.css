@@ -90,12 +90,13 @@ h1{
 
 .jeu_on{
 position: absolute;
+    background-color: black !important;
 
     cursor: none;
     border-style: solid;
     border-width: 2px;
-    border-color: white;
 }
+
 
 /**************************************************/
 /********************ANIMATIONS********************/
