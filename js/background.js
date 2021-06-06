@@ -38,7 +38,7 @@ function Goutte() {
 
 function draw(){
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    for (let i = 0; i < 600; i++) 
+    for (let i = 0; i < 300; i++) 
     {
         goutte[i].draw();
         goutte[i].tombe();
