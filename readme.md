@@ -4,4 +4,4 @@
 </br>
 <p>May the JS FORCE be with you !!!</p>
 
-![Screenshot](https://github.com/joly534/DEVS-INVADERS/blob/master/screenshot.png)
+![Screenshot](https://github.com/joly534/DEVS-INVADERS/blob/master/screenshot-intro.png)
