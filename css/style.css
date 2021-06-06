@@ -74,6 +74,10 @@ h1{
     transform-origin: center bottom;
     transform: perspective(300px) rotateX(25deg);
 }
+.deroule_on p{
+    padding: 0 20%;
+
+}
 
 .generique_on {
     position: absolute;
