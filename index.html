@@ -11,27 +11,26 @@
 
 <body>
 
-	<h1>DEV INVADERS</h1>
+	<h1>DEVS</br>INVADERS</h1>
 	<nav>
 		<a href="html/intro.html" class="bouton">INTRO</a>
 		<a href="html/regles.html" class="bouton">REGLES DU JEU</a>
 		<a href="html/niv1.html" class="bouton">JOUER</a>
 	</nav>
 
-
-
-
 <!------------------------------------sources audio--------------------------------------------->
 
-	<audio id='audioPlayer2'>
-		<source src="musique/soundtrack1.mp3">
-		<source src="musique/soundtrack1.ogg">
-		<source src="musique/soundtrack1.wav">
+	<audio id='audioPlayer1'>
+		<source src="musique/intro.mp3">
+		<source src="musique/intro.ogg">
+		<source src="musique/intro.wav">
 	</audio>
 
 <!-----------------------------------balise du script------------------------------------------>
-
-
+	<script>
+	var music = document.querySelector('#audioPlayer1');
+	music.play();
+	</script>
 	<script src="js/main.js"></script>
 
 

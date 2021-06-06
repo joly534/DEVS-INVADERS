@@ -68,6 +68,7 @@ projectile.bouge= function(){
 }
 
 
+
 function update(){
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     for (let i = 0; i < 300; i++) 
@@ -88,4 +89,3 @@ function update(){
 }
 
 window.requestAnimationFrame(update);
-/******************************************************deuxieme niveau******************************************/
