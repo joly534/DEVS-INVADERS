@@ -1,13 +1,4 @@
-/*************************************canvas*********************************************/
-
-var canvas= document.getElementById('aire_de_jeu');
-var ctx= canvas.getContext('2d');
-
-canvas.width= window.innerWidth-10;
-canvas.height= window.innerHeight-10;
-
-function startFirst()
-{
+function startFirst(){
 
 /****************************changement des classes  des divs du generiques************************/
 
@@ -41,11 +32,11 @@ function startFirst()
 
 
 	/********************controle souris**********************/
-	// canvas.addEventListener("mousemove", controlSouris);
-	// 	function controlSouris(e) 
-	// 	{
- //    		joueur.x = e.offsetX;
-	// 	}
+	canvas.addEventListener("mousemove", controlSouris);
+		function controlSouris(e) 
+		{
+    		joueur.x = e.offsetX;
+		}
 
 
 /**************************constructeur***********************/
